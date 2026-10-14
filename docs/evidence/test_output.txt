@@ -1,0 +1,19 @@
+gcc -Wall -Wextra -std=c11 -Iinclude -g tests/test_deadlock.c src/deadlock.c -o test_deadlock
+[1/3] Unit tests
+PASS: Need matrix calculates successfully
+PASS: P3 Need is (0,1,1)
+PASS: built-in state is SAFE
+PASS: safe sequence matches expected demo
+PASS: valid P3 request is granted
+PASS: request above Need/Available is denied
+PASS: no-progress state is UNSAFE
+PASS: unsafe tentative grant is denied
+PASS: rollback restores Allocation and Available
+PASS: request above Available is denied
+PASS: invalid process index is rejected
+PASS: Maximum below Allocation is rejected
+
+Checks: 12, Failures: 0
+[2/3] Application smoke test
+PASS: application starts and built-in safety check works
+[3/3] Test suite complete

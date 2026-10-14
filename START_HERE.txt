@@ -1,0 +1,18 @@
+DEADLOCKDOCTOR — START HERE
+
+1. Extract this ZIP.
+2. Open Ubuntu/WSL and `cd` into the extracted DeadlockDoctor_Final folder.
+3. Run:
+   make clean
+   make
+   make test
+4. Launch:
+   ./deadlock_doctor
+
+For a quick review demo, follow docs/DEMO_SCRIPT.md.
+For the safe sequence, choose menu option 4.
+For matrices, choose option 3.
+For a valid resource request, reset with option 1, then choose option 5, process 3, and enter 0, 1, 1 at the R0/R1/R2 prompts.
+For a denied unsafe request, reset with option 1, then choose option 5, process 4, and enter 3, 3, 0.
+
+IMPORTANT: the project is a terminal simulation of Banker’s algorithm, not a live kernel monitor.

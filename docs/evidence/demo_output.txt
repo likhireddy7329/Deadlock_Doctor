@@ -1,0 +1,62 @@
+
+================================================
+                 DEADLOCK DOCTOR
+          Resource & Deadlock Manager
+================================================
+Educational simulation of Banker's safety algorithm.
+Built-in SAFE demo loaded automatically.
+
+-------------------- MENU --------------------
+1. Load built-in SAFE demo
+2. Enter custom scenario
+3. Display current resource state
+4. Run safety/deadlock check
+5. Request resources for a process
+6. Exit
+Enter choice (1-6): 
+Allocation Matrix (currently held)
+       R0    R1    R2    
+P0    0     1     0     
+P1    2     0     0     
+P2    3     0     2     
+P3    2     1     1     
+P4    0     0     2     
+
+Maximum Matrix (maximum claim)
+       R0    R1    R2    
+P0    7     5     3     
+P1    3     2     2     
+P2    9     0     2     
+P3    2     2     2     
+P4    4     3     3     
+
+Need Matrix (Maximum - Allocation)
+       R0    R1    R2    
+P0    7     4     3     
+P1    1     2     2     
+P2    6     0     0     
+P3    0     1     1     
+P4    4     3     1     
+
+Available Resources: R0=3  R1=3  R2=2
+
+-------------------- MENU --------------------
+1. Load built-in SAFE demo
+2. Enter custom scenario
+3. Display current resource state
+4. Run safety/deadlock check
+5. Request resources for a process
+6. Exit
+Enter choice (1-6): 
+SYSTEM STATUS: SAFE
+Safe Sequence: P1 -> P3 -> P4 -> P0 -> P2
+Meaning: every process can finish in this order without deadlock.
+
+-------------------- MENU --------------------
+1. Load built-in SAFE demo
+2. Enter custom scenario
+3. Display current resource state
+4. Run safety/deadlock check
+5. Request resources for a process
+6. Exit
+Enter choice (1-6): Thank you for using DeadlockDoctor.
